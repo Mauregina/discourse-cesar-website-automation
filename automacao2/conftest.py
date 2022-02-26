@@ -1,6 +1,6 @@
 import pytest
 
-from automacao1.pages.MainPage import MainPage
+from automacao2.pages.MainPage import MainPage
 
 
 def pytest_addoption(parser):

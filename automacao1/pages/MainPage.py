@@ -1,7 +1,7 @@
 import time
 
 from selenium.webdriver.common.by import By
-from pages.PageObject import PageObject
+from automacao1.pages.PageObject import PageObject
 from collections import Counter
 
 class MainPage(PageObject):
@@ -28,6 +28,7 @@ class MainPage(PageObject):
 
         print(self.driver.current_url)
 
+        #criar metodo ----------------------------------------------------
         scroll_pause_time = 2
 
         # Get scroll height
@@ -47,7 +48,7 @@ class MainPage(PageObject):
                 # If heights are the same it will exit the function
                 break
             last_height = new_height
-
+        #------------------------------------------------------------------------------
 
         # PRIMEIRO DESAFIO
         topics_closed = self.driver.find_elements_by_xpath("//tr[contains(@class, 'closed ember-view')]")
