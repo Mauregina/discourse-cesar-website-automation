@@ -1,5 +1,6 @@
 import time
 
+from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
 from automacao1.pages.PageObject import PageObject
 from collections import Counter
@@ -18,13 +19,20 @@ class MainPage(PageObject):
         return self.driver.current_url == self.URL_MAIN
 
     def is_demo_link_displayed(self) -> bool:
-        return self.driver.find_element(by=By.XPATH, value='//*[@id="main"]/div/ul/li[4]/a') != 0
+        try:
+            return self.driver.find_element(by=By.XPATH, value='//*[@id="main"]/div/ul/li[4]/a') != 0
+
+        except NoSuchElementException:
+            return False
 
     def click_demo_item(self):
-        self.driver.find_element(by=By.XPATH, value='//*[@id="main"]/div/ul/li[4]/a').click()
-        time.sleep(2)
-        self.driver.switch_to.window(self.driver.window_handles[1])
+        try:
+            self.driver.find_element(by=By.XPATH, value='//*[@id="main"]/div/ul/li[4]/a').click()
+            time.sleep(2)
+            self.driver.switch_to.window(self.driver.window_handles[1])
 
+        except NoSuchElementException:
+            return False
 
 
 

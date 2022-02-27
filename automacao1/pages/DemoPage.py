@@ -1,7 +1,6 @@
 import time
 
 from selenium.common.exceptions import NoSuchElementException
-from selenium.webdriver.common.by import By
 from automacao1.pages.PageObject import PageObject
 from collections import Counter
 
@@ -56,7 +55,11 @@ class DemoPage(PageObject):
             return None
 
     def get_all_topics(self) -> list:
-        return self.driver.find_elements_by_xpath('//table[@id="ember50"]/tbody/tr')
+        try:
+            return self.driver.find_elements_by_xpath('//table[@id="ember50"]/tbody/tr')
+
+        except NoSuchElementException:
+            return None
 
     def get_frequency_items_category(self) -> dict:
         try:
