@@ -3,30 +3,25 @@
 ## Ferramentas
 * Pytest 
 * Selenium WebDriver
+* Pycharm
 
 ## Automação 1
 Estrutura de automação de testes do site https://www.discourse.org/
 
-### Cenários
-#### test_1.py
+### Cenários (test_1.py)
 CT-001 – Imprimir título de todos os tópicos fechados.
-
 1. Acessar a página do Discourse (https://www.discourse.org/).
 2. Clicar na opção Demo disponível no menu principal.
 3. Fazer scroll até o final da página.
 4. Imprimir o título de todos os tópicos fechados (são os que tem um cadeado ao lado esquerdo do título).
 
-#### test_2.py
 CT-002 – Imprimit quantidade de itens de cada categoria e dos que não possui categoria.
-
 1. Acessar a página do Discourse (https://www.discourse.org/).
 2. Clicar na opção Demo disponível no menu principal.
 3. Fazer scroll até o final da página.
 4. Imprimir quantidade de itens de cada categoria e dos que não possui categoria 
 
-#### test_3.py
 CT-003 – Imprimit título do tópico que contém o maior número de views.
-
 1. Acessar a página do Discourse (https://www.discourse.org/).
 2. Clicar na opção Demo disponível no menu principal.
 3. Fazer scroll até o final da página.
