@@ -3,7 +3,7 @@
 ## Ferramentas
 * Pytest 
 * Selenium WebDriver
-* Pycharm
+* PyCharm
 
 ## Automação 1
 Estrutura de automação de testes do site https://www.discourse.org/
@@ -30,10 +30,8 @@ CT-003 – Imprimit título do tópico que contém o maior número de views.
 ## Automação 2
 Estrutura de automação de testes do site https://www.cesar.school/
 
-### Cenários
-#### test_1.py
+### Cenários (test_1.py)
 CT-001 – Imprimir título e data de publicação do segundo post da página.
-
 1. Acessar a página do Cesar School (https://www.cesar.school/).
 2. Abrir o menu “School”.
 3. Clicar a opção “Blog”.
@@ -41,9 +39,7 @@ CT-001 – Imprimir título e data de publicação do segundo post da página.
 5. Imprimir título do segundo post.
 6. Imprimir data de publicação do segundo post.
 
-#### test_2.py
 CT-002 – Imprimir título e autor do terceiro post da página.
-
 1. Acessar a página do Cesar School (https://www.cesar.school/).
 2. Abrir o menu “School”.
 3. Clicar a opção “Blog”.
@@ -51,9 +47,7 @@ CT-002 – Imprimir título e autor do terceiro post da página.
 5. Imprimir título do terceiro post.
 6. Imprimir autor do terceiro post.
 
-#### test_3.py
 CT-003 – Imprimir endereço do cesar school.
-
 1. Acessar a página do Cesar School (https://www.cesar.school/).
 2. Abrir o menu “School”.
 3. Clicar a opção “Blog”.
