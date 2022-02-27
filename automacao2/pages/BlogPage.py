@@ -35,38 +35,3 @@ class BlogPage(PageObject):
         article_info = self.get_article_list()[post_order-1]
         author_article = article_info.find_element_by_class_name("author-name").text
         return author_article
-
-    def get_info_second_article(self):
-        second_article = self.get_article_list()[1]
-
-        datetime_published = second_article.find_element_by_tag_name("time").get_attribute("datetime")
-        # title_second_article = second_article.find_element_by_class_name("entry-title").text
-
-        print(self.format_datetime_to_date(datetime_published))
-        # print(title_second_article)
-
-    def get_info_third_article(self):
-        third_article = self.get_article_list()[2]
-
-        # title_third_article = third_article.find_element_by_class_name("entry-title").text
-        author_third_article = third_article.find_element_by_class_name("author-name").text
-
-        # print(title_third_article)
-        print(author_third_article)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -14,8 +14,11 @@ class MainPage(PageObject):
     def open_main_page_url(self):
         self.driver.get(self.URL_MAIN)
 
-    # def is_url_main_page(self):
-    #     return self.driver.current_url == self.URL_MAIN
+    def is_url_main_page(self) -> bool:
+        return self.driver.current_url == self.URL_MAIN
+
+    def is_demo_link_displayed(self) -> bool:
+        return self.driver.find_element(by=By.XPATH, value='//*[@id="main"]/div/ul/li[4]/a') != 0
 
     def click_demo_item(self):
         self.driver.find_element(by=By.XPATH, value='//*[@id="main"]/div/ul/li[4]/a').click()
