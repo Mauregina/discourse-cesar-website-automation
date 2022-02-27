@@ -1,6 +1,4 @@
-from automacao1.conftest import main_page_open
 from automacao1.pages.DemoPage import DemoPage
-
 
 class Test1:
 

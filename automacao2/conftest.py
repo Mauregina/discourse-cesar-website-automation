@@ -13,10 +13,11 @@ def main_page_open(request):
     if selected_browser not in ['chrome']:
         raise Exception(f'Browser is not supported: {selected_browser.upper()}')
 
-    print("Launch browser automacao 2")
+    print("Launch browser")
     mainPage = MainPage(browser=selected_browser)
 
     yield mainPage
 
     print("Close browser")
+    mainPage.close()
 
