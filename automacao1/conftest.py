@@ -15,8 +15,10 @@ def main_page_open(request):
 
     print("Launch browser")
     mainPage = MainPage(browser=selected_browser)
+    mainPage.click_demo_item()
 
     yield mainPage
 
     print("Close browser")
+    mainPage.close()
 
