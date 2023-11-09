@@ -1,57 +1,57 @@
-# Automação de Testes 
+# Automation Test
 
-## Ferramentas
+## Tools
 * Pytest 
 * Selenium WebDriver
 * PyCharm
 
-## Automação 1
-Estrutura de automação de testes do site https://www.discourse.org/
+## Automation 1
+Test Automation Structure for the Website (https://www.discourse.org/)
 
-### Cenários (test_1.py)
-CT-001 – Imprimir título de todos os tópicos fechados.
-1. Acessar a página do Discourse (https://www.discourse.org/).
-2. Clicar na opção Demo disponível no menu principal.
-3. Fazer scroll até o final da página.
-4. Imprimir o título de todos os tópicos fechados (são os que tem um cadeado ao lado esquerdo do título).
+### Scenarios (test_1.py)
+TC-001 – Print the title of all closed topics.
+1. Access the Discourse page (https://www.discourse.org/).
+2. Click on the Demo option available in the main menu.
+3. Scroll to the bottom of the page.
+4. Print the title of all closed topics (those with a lock icon on the left side of the title).
 
-CT-002 – Imprimit quantidade de itens de cada categoria e dos que não possui categoria.
-1. Acessar a página do Discourse (https://www.discourse.org/).
-2. Clicar na opção Demo disponível no menu principal.
-3. Fazer scroll até o final da página.
-4. Imprimir quantidade de itens de cada categoria e dos que não possui categoria 
+TC-002 – Print the quantity of items in each category and those without a category
+1. Access the Discourse page (https://www.discourse.org/).
+2. Click on the Demo option available in the main menu.
+3. Scroll to the bottom of the page.
+4. Print the quantity of items in each category and those without a category.
 
-CT-003 – Imprimit título do tópico que contém o maior número de views.
-1. Acessar a página do Discourse (https://www.discourse.org/).
-2. Clicar na opção Demo disponível no menu principal.
-3. Fazer scroll até o final da página.
-4. Imprimir título do tópico que contém o maior número de views 
+TC-003 – Print the title of the topic that has the highest number of views.
+1. Access the Discourse page (https://www.discourse.org/).
+2. Click on the Demo option available in the main menu.
+3. Scroll to the bottom of the page.
+4. Print the title of the topic that has the highest number of views.
 
 ## Automação 2
 Estrutura de automação de testes do site https://www.cesar.school/
 
-### Cenários (test_1.py)
-CT-001 – Imprimir título e data de publicação do segundo post da página.
-1. Acessar a página do Cesar School (https://www.cesar.school/).
-2. Abrir o menu “School”.
-3. Clicar a opção “Blog”.
-4. Ir para a segunda página da lista de posts.
-5. Imprimir título do segundo post.
-6. Imprimir data de publicação do segundo post.
+### Scenarios (test_1.py)
+TC-001 – Print the title and publication date of the second post on the page
+1. Access the Cesar School page (https://www.cesar.school/).
+2. Open the "School" menu.
+3. Click on the "Blog" option.
+4. Go to the second page of the list of posts.
+5. Print the title of the second post.
+6. Print the publication date of the second post.
 
-CT-002 – Imprimir título e autor do terceiro post da página.
-1. Acessar a página do Cesar School (https://www.cesar.school/).
-2. Abrir o menu “School”.
-3. Clicar a opção “Blog”.
-4. Ir para a segunda página da lista de posts.
-5. Imprimir título do terceiro post.
-6. Imprimir autor do terceiro post.
+TC-002 – Print the title and author of the third post on the page
+1. Access the Cesar School page (https://www.cesar.school/).
+2. Open the "School" menu.
+3. Click on the "Blog" option.
+4. Go to the second page of the list of posts.
+5. Print the title of the third post.
+6. Print the author of the third post.
 
-CT-003 – Imprimir endereço do cesar school.
-1. Acessar a página do Cesar School (https://www.cesar.school/).
-2. Abrir o menu “School”.
-3. Clicar a opção “Blog”.
-4. Ir para a segunda página da lista de posts.
-5. Ir até o final da página.
-6. Imprimir endereço do Cesar School.
+TC-003 – Print the address of Cesar School
+1. Access the Cesar School page (https://www.cesar.school/).
+2. Open the "School" menu.
+3. Click on the "Blog" option.
+4. Go to the second page of the list of posts.
+5. Scroll to the bottom of the page.
+6. Print the address of Cesar School.
 
